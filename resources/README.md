@@ -1,0 +1,1 @@
+This is where various useful files such as reports can be generated or stored.

@@ -1,0 +1,1 @@
+This is where the data for the Inception V3 Model will be downloaded and stored.

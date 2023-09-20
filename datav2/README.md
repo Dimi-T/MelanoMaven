@@ -1,0 +1,1 @@
+This is where the data for the VGG16 Model will be downloaded and stored.

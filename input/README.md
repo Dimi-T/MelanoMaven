@@ -1,0 +1,1 @@
+This is where the input image will be downloaded from the Telegram Chat through the Telegram Bot API. This is also where you may store your own input samples for manual, directed testing.

@@ -36,23 +36,18 @@ def test(model, batch_size = 16, criterion = None, test_ds = None, num_classes =
             label = target.data[i]
             class_total[label] += 1
 
-            for i in range(len(probabilities)):
-
-                label = target.data[i]
-                class_total[label] += 1
-
-                if probabilities[i, 1] >= threshold:  # Check if the predicted probability for the positive class is above the threshold
-                    if label == 1:
-                        TP += 1
-                        class_correct[1] += 1
-                    else:
-                        FP += 1
+            if probabilities[i, 1] >= threshold:  # Check if the predicted probability for the positive class is above the threshold
+                if label == 1:
+                    TP += 1
+                    class_correct[1] += 1
                 else:
-                    if label == 0:
-                        TN += 1
-                        class_correct[0] += 1
-                    else:
-                        FN += 1
+                    FP += 1
+            else:
+                if label == 0:
+                    TN += 1
+                    class_correct[0] += 1
+                else:
+                    FN += 1
 
     test_loss = test_loss/len(test_loader.dataset)
 

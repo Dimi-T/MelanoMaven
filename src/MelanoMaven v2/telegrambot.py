@@ -38,7 +38,7 @@ first_time = {}
 enable = EnableProcess()
 timer = Timer()
 
-Token = '6144801054:AAGlpgqLF8EC_yj5wNSEpMaqjRLmhMJn7UE'
+Token = 'redacted'
 Username = '@Melano_Maven_v2_bot'
 img_types = ['heic', 'heics', 'HEIC', 'HEICS', 'png', 'PNG', 'jpg', 'JPG', 'jpeg', 'JPEG']
 

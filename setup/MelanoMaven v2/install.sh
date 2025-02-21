@@ -2,7 +2,7 @@
 
 echo Fetching Updates...
 exec > /dev/null
-sudo apt --fix-broken install && apt-get -y update && sudo apt-get -y upgrade
+sudo apt --fix-broken install && sudo apt-get -y upgrade
 exec > /dev/tty
 echo Done!
 
